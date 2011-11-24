@@ -39,4 +39,11 @@ public interface TranscodeInputStream {
      * @throws IOException if something went wrong wile reading the byte.
      */
     public int read(byte[] bytes, int off, int len) throws IOException;
+
+    /**
+     * Close the <code>TranscodeInputStream</code>.
+     *
+     * @throws IOException if something went wrong wile reading the byte.
+     */
+    public void close() throws IOException;
 }
